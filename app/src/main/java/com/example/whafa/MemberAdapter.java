@@ -45,6 +45,7 @@ public class MemberAdapter extends RecyclerView.Adapter<MemberAdapter.ViewHolder
             public void onClick(View v) {
                 if (listBelanja.size() == 0){
                     Toast.makeText(context, "bruh", Toast.LENGTH_SHORT).show();
+                    return;
                 }
 
                 itemList.get(posisi).removeLastBelanja();
